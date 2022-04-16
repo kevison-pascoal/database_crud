@@ -2,6 +2,7 @@ const http = require('http');
 const express = require('express');
 const app = express();
 
+require('dotenv').config();
 //import https from "http";
 
 const host = '127.0.0.1';
@@ -44,3 +45,7 @@ process.on('SIGTERM', () => {
     console.log( `Process terminated` );
   })
 });
+
+console.log(process.env.NODE_ENV);
+console.log(process.env.USER_ID);
+console.log(process.env.USER_KEY);
