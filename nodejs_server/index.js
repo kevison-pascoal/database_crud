@@ -30,6 +30,17 @@ app.put('/something', (request, response) => {
 app.delete('/didNotLike', (request, response) => {
   response.send( `Here the dates will be deleted!` );
 });
-app.listen(port + 1, () => {
+
+app.get('/', (request, response) => {
+  response.send( `Server In Port ${port + 1} and host ${host} processed!\n` );
+})
+
+const server = app.listen(port + 1, () => {
   console.log( `Server in port ${port + 1} and host ${host} processed!` );
+});
+
+process.on('SIGTERM', () => {
+  server.close( () => {
+    console.log( `Process terminated` );
+  })
 });
