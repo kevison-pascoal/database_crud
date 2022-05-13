@@ -10,8 +10,10 @@
   "author": "Kevison",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^4.1.2",
     "dotenv": "^16.0.0",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "progress": "^2.0.3"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
