@@ -1,11 +1,13 @@
-const http = require('http');
-const items = require('../skills/export');
+const allBase = require('../skills/export');
 const { dataBase, moreData } = require('../skills/export');
+
+const http = require('http');
 const host = '127.0.0.1';
 const port = 3000;
 
 console.log('DataBase is: %o', dataBase);
-console.log('moreBase is: %o', moreData);
+console.log('MoreBase is: %o', moreData);
+console.log('AllBase' + allBase);
 
 const app = http.createServer((request, response) => {
   response.statusCode = 200;
