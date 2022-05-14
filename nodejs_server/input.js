@@ -16,5 +16,5 @@ const question = [
   },
 ];
 inquirer.prompt(question).then(answers => {
-  console.log(`Hi ${answers.message}!`);
+  console.log(`Hi ${answers.name}!`);
 })
