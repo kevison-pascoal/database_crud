@@ -1,6 +1,7 @@
 const progressBar = require("progress");
 const { exec } = require('child_process');
 const cowsay = require('cowsay');
+console.clear();
 const bar = new progressBar(":bar", {total: 90});
 const time = setInterval(() => {
   bar.tick();
@@ -15,7 +16,7 @@ const time = setInterval(() => {
         console.log(`stderr: ${stderr}`);
       } 
       if (stdout) {
-        for(let i = 0; i < 10; i++) {
+        for(let i = 0; i < 100; i++) {
           console.log(cowsay.say({
             text: "Helo World",
             e: "oO",
