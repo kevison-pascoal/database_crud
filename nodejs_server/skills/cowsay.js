@@ -7,16 +7,17 @@ const time = setInterval(() => {
   bar.tick();
   if(bar.complete) {
     clearInterval(time);
-    console.log('bar full');
-    console.log("===Instalando dependencias===");
-    exec(`npx cowsay`, (error, stdout, stderr) => {
+    console.log("=== Process Package ===");
+    exec(`npx cowsay Vaca ta on paê`, (error, stdout, stderr) => {
       if(error) {
         console.log(`error: ${error.message}`);
       } 
       if (stderr) {
         console.log(`stderr: ${stderr}`);
       } 
-      console.log("===Tudo pronto para começar==="); 
+      if (stdout) {
+        console.log(stdout);
+      } 
     });
   }
 }, 10);
