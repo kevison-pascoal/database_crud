@@ -1,4 +1,4 @@
-const {dataBase, moreData} = require('./skills/export');
+const {dataBase, moreData} = require('./atributes/export');
 
 const host = '127.0.0.1';
 const port = 3000;
