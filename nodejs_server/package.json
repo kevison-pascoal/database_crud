@@ -1,12 +1,17 @@
 {
   "name": "nodejs_server",
   "version": "1.0.0",
-  "description": "server nodejs",
-  "main": "index.js",
+  "description": "developing skills with nodejs",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./src/server.js"
   },
+  "private": false,
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": ["> 1%","last 2 versions", "not ie <= 8"],
   "author": "Kevison",
   "license": "MIT",
   "dependencies": {
