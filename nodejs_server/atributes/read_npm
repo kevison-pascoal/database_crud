@@ -24,3 +24,53 @@ npm run <task-name> | scripts
 $ npm run watch
 $ npm run dev
 $ npm run prod
+
+$ npm list || 23/05/2022
+nodejs_server@1.0.0 C:\Users\Pmend\Kev.Developer\Back-End\Nodejs\nodejs_server
+├── @types/express@4.17.13
+├── chalk@5.0.1
+├── child_process@1.0.2
+├── cowsay@1.5.0
+├── dotenv@16.0.0
+├── express@4.17.3
+├── inquirer@8.2.4
+├── nodemon@2.0.15
+└── progress@2.0.3
+$npm list --depth=0
+$npm list cowsay
+nodejs_server@1.0.0 C:\Users\Pmend\Kev.Developer\Back-End\Nodejs\nodejs_server
+└── cowsay@1.5.0
+$npm list -g --depth 0
+C:\Users\Pmend\AppData\Roaming\npm
+├── @expo/ngrok@4.1.0
+├── expo-cli@4.12.1
+├── npm@8.5.3
+└── yarn@1.22.17
+
+$npm view cowsay version
+PS C:\Users\Pmend\Kev.Developer\Back-End\Nodejs\nodejs_server> npm view cowsay version
+1.5.0
+$npm view cowsay versions
+1.5.0
+PS C:\Users\Pmend\Kev.Developer\Back-End\Nodejs\nodejs_server> npm view cowsay versions
+[
+  '1.0.0', '1.0.1', '1.0.2',
+  '1.0.3', '1.1.0', '1.1.1',
+  '1.1.2', '1.1.3', '1.1.4',
+  '1.1.5', '1.1.6', '1.1.7',
+  '1.1.8', '1.1.9', '1.2.0',
+  '1.2.1', '1.3.0', '1.3.1',
+  '1.4.0', '1.5.0'
+]
+
+$npm outdated
+Package  Current  Wanted  Latest  Location              Depended by
+dotenv    16.0.0  16.0.1  16.0.1  node_modules/dotenv   nodejs_server
+express   4.17.3  4.18.1  4.18.1  node_modules/express  nodejs_server
+nodemon   2.0.15  2.0.16  2.0.16  node_modules/nodemon  nodejs_server
+
+npm semantic versioning using npm
+The Semantic Versioning concept is simple: all versions have 3 digits: x.y.z.
+the first digit is the major version
+the second digit is the minor version
+the third digit is the patch version
