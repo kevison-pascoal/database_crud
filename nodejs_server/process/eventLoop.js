@@ -35,6 +35,9 @@ const foO = () => {
   console.log('foo');
   setTimeout(bar, 0);
   new Promise((resolve, reject) => resolve('should be right after baz, before bar')).then(resolve => console.log(resolve));
+  process.nextTick(() => {
+    console.log('position');
+  })
   baz();
 }
 foO();
